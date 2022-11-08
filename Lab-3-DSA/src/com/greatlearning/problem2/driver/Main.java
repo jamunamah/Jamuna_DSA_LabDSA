@@ -6,7 +6,7 @@ import com.greatlearning.problem2.sumofpairs.SumOfPairs;
 import com.greatlearning.problem2.sumofpairs.SumOfPairs.Node;
 
 public class Main {
-	
+
 	public static void main(String[] args) {
 
 		SumOfPairs sumOfPairs = new SumOfPairs();
@@ -37,16 +37,16 @@ public class Main {
 			case 1:
 
 				int value, num;
-				
+
 				System.out.println("Enter no of values: ");
 				num = sc.nextInt();
-				
+
 				Node result = null;
-				
+
 				for (int i = 0; i < num; i++) {
 					System.out.println("\nInsert value at " + (i + 1) + ": ");
 					value = sc.nextInt();
-					
+
 					if (root == null) {
 						root = sumOfPairs.insert(root, value);
 					} else {
@@ -55,7 +55,7 @@ public class Main {
 							i -= 1;
 					}
 					System.out.println("Inorder of Binary Tree\n");
-					
+
 					sumOfPairs.Inorder(root);
 				}
 				break;
